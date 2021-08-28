@@ -1,13 +1,6 @@
-<article class="post">
-      <div class="title">
-        <p>{{title}}</p>
-        <p>{{post_content}}</p>
-      </div>
-      <div class="meta">
-        {{!-- {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on --}}
-        {{!-- the format_date function is from our helpers.js file, and will format the date in a clean manner. If we wished to keep the default format, then remove format_date --}}
-        {{!-- {{format_date created_at}} --}}
-        |
-        {{!-- <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a> --}}
-      </div>
-</article>
+<div class="card">
+        <h3 class="card-header text-uppercase">{{title}}</h3>
+        <div class="card-body" id="language-buttons">
+          <p>{{post_content}}</p>
+        </div>
+</div>
